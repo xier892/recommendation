@@ -1,0 +1,217 @@
+@media screen and (max-width: 1366px) and (orientation: landscape) {
+  .topRight {
+    top: 2.5%;
+    right: 0;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .large-container {
+    align-items: center;
+    padding: 1.5em;
+  }
+  .store-list {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 1090px) {
+  .small-article {
+    width: 20em;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .page.background-gray2 {
+    background-color: #fff !important;
+  }
+  .drop-shadow {
+    box-shadow: none;
+  }
+  .mobile:not(.prevButton) {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+  .topRight {
+    top: 2.5%;
+    left: 5%;
+    right: auto;
+  }
+  .medium .media-img {
+    max-width: 90vw;
+  }
+  .small-article {
+    width: 90vw;
+  }
+  .medium-article {
+    width: 36em;
+    font-size:
+  }
+  .background-img {
+    background-position: 0 400px;
+  }
+  .large-container {
+    align-items: center;
+    padding: 1.5em;
+  }
+    .pageScroll > .large-container {
+      margin-top: 0;
+    }
+    .large-container:first-of-type {
+      padding-top: 0;
+    }
+    .large-container:last-of-type {
+      padding-bottom: 0;
+    }
+  .medium-container {
+    width: 100vw;
+    min-height: 100vh;
+  }
+  .sub-container {
+    align-items: center;
+  }
+  .container-content {
+    flex-flow: row wrap;
+    padding: 0.5em 2em 3.5em 2em;
+  }
+  .multipleChoice a {
+    min-height: 3em;
+  }
+  .button-container {
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 100vw;
+    -webkit-margin-start: 0;
+    -webkit-margin-after: 0;
+    padding: 0 20em;
+    bottom: 0;
+  }
+    .button-container button, .button-container-last button, .button-container-submit button {
+      font-size: 100%;
+      min-width: 4.5em;
+    }
+    .button-container button {
+      margin: 0.5em;
+      height: 3em;
+      min-width: 4.5em;
+    }
+    .editButton {
+      margin: 0;
+      height: 3em;
+    }
+    .submitButton {
+      margin: 0;
+      width: 100%;
+      height: 3.5em;
+    }
+  .large-container .section, #resubmit .section {
+    justify-content: center;
+  }
+  #resubmit .section {
+    width: 100vw;
+  }
+  .modal .container-content {
+    padding: 1.25em 0;
+    width: 100%;
+  }
+  .modal .media-img {
+    width: 100%;
+    height: 100%;
+  }
+  .modal .multipleChoice {
+    width: 89vw;
+    overflow-x: hidden;
+  }
+  .switch-listing {
+    flex-flow: column;
+    margin-top: 20px;
+  }
+    .switch-listing .media {
+      order: 0;
+      align-self: center;
+      margin-bottom: 20px;
+    }
+    .switch-listing-description {
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  .keyboard-list .price {
+    margin-bottom: 15px;
+  }
+  .keyboard-list > li {
+    flex-flow: column;
+  }
+  .keyboard-identifier {
+    order: 2;
+    justify-content: space-between;
+  }
+    .keyboard-identifier .media {
+      order: 2;
+    }
+    .description {
+      margin-left: 0;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: 30px;
+  }
+  .switch-listing .media-img {
+    width: 150px;
+    height: 150px;
+  }
+  .keyboard-identifier .media .media-img {
+    width: 150px;
+    height: 100px;
+  }
+}
+/* @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  body {
+    font-size: 21px;
+  }
+} */
+@media screen and (max-width: 500px) {
+  .container-content {
+    flex-flow: row wrap;
+    padding: 0.5em 1.25em 3.5em 1.25em;
+  }
+  .full.keyboard-specs {
+    column-count: 1;
+  }
+  .medium-article {
+    width: 90vw;
+  }
+  .multipleChoice a {
+    flex-flow: column;
+    align-items: flex-start;
+  }
+  .button-container button, .button-container-last button, .button-container-submit button {
+    font-size: 90%;
+    min-width: 80px;
+  }
+  .button-container button {
+    margin: 0.5em;
+    height: 50px;
+  }
+  .editButton {
+    margin: 0;
+    height: 50px;
+  }
+  .submitButton {
+    margin: 0;
+    width: 100%;
+    height: 75px;
+  }
+  .multipleChoice .media-img {
+    display: none;
+  }
+  .multipleChoice section:first-of-type {
+    order: 2;
+  }
+}
+@media screen and (max-width: 500px) and (orientation: portrait) {
+  h1 {
+    font-size: 3.09em;
+  }
+}

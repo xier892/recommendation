@@ -1,0 +1,625 @@
+.forceUltraLight .media-img {
+  background: url('../images/icons/forceUltraLight.png');
+  background-image: url('../images/icons/forceUltraLight.svg'), none;
+}
+.forceLight .media-img {
+  background: url('../images/icons/forceLight.png');
+  background-image: url('../images/icons/forceLight.svg'), none;
+}
+.forceMed .media-img {
+  background: url('../images/icons/forceMed.png');
+  background-image: url('../images/icons/forceMed.svg'), none;
+}
+.forceHeavy .media-img {
+  background: url('../images/icons/forceHeavy.png');
+  background-image: url('../images/icons/forceHeavy.svg'), none;
+}
+.forceUltra .media-img {
+  background: url('../images/icons/forceUltra.png');
+  background-image: url('../images/icons/forceUltra.svg'), none;
+}
+.forceUltraLight.selected .media-img {
+  background: url('../images/icons/forceUltraLight_selected.png');
+  background-image: url('../images/icons/forceUltraLight_selected.svg'), none;
+}
+.forceLight.selected .media-img {
+  background: url('../images/icons/forceLight_selected.png');
+  background-image: url('../images/icons/forceLight_selected.svg'), none;
+}
+.forceMed.selected .media-img {
+  background: url('../images/icons/forceMed_selected.png');
+  background-image: url('../images/icons/forceMed_selected.svg'), none;
+}
+.forceHeavy.selected .media-img {
+  background: url('../images/icons/forceHeavy_selected.png');
+  background-image: url('../images/icons/forceHeavy_selected.svg'), none;
+}
+.forceUltra.selected .media-img {
+  background: url('../images/icons/forceUltra_selected.png');
+  background-image: url('../images/icons/forceUltra_selected.svg'), none;
+}
+.noiseQuiet .media-img {
+  background: url('../images/icons/noiseQuiet.png');
+  background-image: url('../images/icons/noiseQuiet.svg'), none;
+}
+.noiseLoud .media-img {
+  background: url('../images/icons/noiseLoud.png');
+  background-image: url('../images/icons/noiseLoud.svg'), none;
+}
+.noiseQuiet.selected .media-img {
+  background: url('../images/icons/noiseQuiet_selected.png');
+  background-image: url('../images/icons/noiseQuiet_selected.svg'), none;
+}
+.noiseLoud.selected .media-img {
+  background: url('../images/icons/noiseLoud_selected.png');
+  background-image: url('../images/icons/noiseLoud_selected.svg'), none;
+}
+.tactilityLinear .media-img {
+  background: url('../images/icons/tactilityLinear.png');
+  background-image: url('../images/icons/tactilityLinear.svg'), none;
+}
+.tactilityBumpy .media-img {
+  background: url('../images/icons/tactilityBumpy.png');
+  background-image: url('../images/icons/tactilityBumpy.svg'), none;
+}
+.tactilityClicky .media-img {
+  background: url('../images/icons/tactilityClicky.png');
+  background-image: url('../images/icons/tactilityClicky.svg'), none;
+}
+.tactilityLinear.selected .media-img {
+  background: url('../images/icons/tactilityLinear_selected.png');
+  background-image: url('../images/icons/tactilityLinear_selected.svg'), none;
+}
+.tactilityBumpy.selected .media-img {
+  background: url('../images/icons/tactilityBumpy_selected.png');
+  background-image: url('../images/icons/tactilityBumpy_selected.svg'), none;
+}
+.tactilityClicky.selected .media-img {
+  background: url('../images/icons/tactilityClicky_selected.png');
+  background-image: url('../images/icons/tactilityClicky_selected.svg'), none;
+}
+.size100 .media-img {
+  background: url('../images/icons/size100.png');
+  background-image: url('../images/icons/size100.svg'), none;
+}
+.size80 .media-img {
+  background: url('../images/icons/size80.png');
+  background-image: url('../images/icons/size80.svg'), none;
+}
+.size60 .media-img {
+  background: url('../images/icons/size60.png');
+  background-image: url('../images/icons/size60.svg'), none;
+}
+.size100.selected .media-img {
+  background: url('../images/icons/size100_selected.png');
+  background-image: url('../images/icons/size100_selected.svg'), none;
+}
+.size80.selected .media-img {
+  background: url('../images/icons/size80_selected.png');
+  background-image: url('../images/icons/size80_selected.svg'), none;
+}
+.size60.selected .media-img {
+  background: url('../images/icons/size60_selected.png');
+  background-image: url('../images/icons/size60_selected.svg'), none;
+}
+.macrosYes .media-img {
+  background: url('../images/icons/macrosYes.png');
+  background-image: url('../images/icons/macrosYes.svg'), none;
+}
+.macrosNo .media-img {
+  background: url('../images/icons/macrosNo.png');
+  background-image: url('../images/icons/macrosNo.svg'), none;
+}
+.macrosYes.selected .media-img {
+  background: url('../images/icons/macrosYes_selected.png');
+  background-image: url('../images/icons/macrosYes_selected.svg'), none;
+}
+.macrosNo.selected .media-img {
+  background: url('../images/icons/macrosNo_selected.png');
+  background-image: url('../images/icons/macrosNo_selected.svg'), none;
+}
+.backlightingYes .media-img {
+  background: url('../images/icons/backlightingYes.png');
+  background-image: url('../images/icons/backlightingYes.svg'), none;
+}
+.backlightingNo .media-img {
+  background: url('../images/icons/backlightingNo.png');
+  background-image: url('../images/icons/backlightingNo.svg'), none;
+}
+.backlightingYes.selected .media-img {
+  background: url('../images/icons/backlightingYes_selected.png');
+  background-image: url('../images/icons/backlightingYes_selected.svg'), none;
+}
+.backlightingNo.selected .media-img {
+  background: url('../images/icons/backlightingNo_selected.png');
+  background-image: url('../images/icons/backlightingNo_selected.svg'), none;
+}
+.colorYes .media-img {
+  background: url('../images/icons/colorYes.png');
+  background-image: url('../images/icons/colorYes.svg'), none;
+}
+.colorNo .media-img {
+  background: url('../images/icons/colorNo.png');
+  background-image: url('../images/icons/colorNo.svg'), none;
+}
+.colorYes.selected .media-img {
+  background: url('../images/icons/colorYes_selected.png');
+  background-image: url('../images/icons/colorYes_selected.svg'), none;
+}
+.colorNo.selected .media-img {
+  background: url('../images/icons/colorNo_selected.png');
+  background-image: url('../images/icons/colorNo_selected.svg'), none;
+}
+
+#gateronClear .switch-listing .media-img {
+  background-image: url("../images/switches/gateronClear.png");
+}
+#matiasQuietLinear .switch-listing .media-img {
+  background-image: url("../images/switches/matiasQuietLinear.png");
+}
+#cherryMXred .switch-listing .media-img {
+  background-image: url("../images/switches/cherryMXred.png");
+}
+#cherryMXspeedsilver .switch-listing .media-img {
+  background-image: url("../images/switches/cherryMXspeedsilver.png");
+}
+#cherryMXSilentRed .switch-listing .media-img {
+  background-image: url("../images/switches/cherryMXSilentRed.png");
+}
+#gateronRed .switch-listing .media-img {
+  background-image: url("../images/switches/gateronRed.png");
+}
+#cherryMXnaturewhite .switch-listing .media-img {
+  background-image: url("../images/switches/cherryMXnaturewhite.png");
+}
+#gateronBlack .switch-listing .media-img {
+  background-image: url("../images/switches/gateronBlack.png");
+}
+#gateronYellow .switch-listing .media-img {
+  background-image: url("../images/switches/gateronYellow.png");
+}
+#cherryMXblack .switch-listing .media-img {
+  background-image: url("../images/switches/cherryMXblack.png");
+}
+#cherryMXSilentBlack .switch-listing .media-img {
+  background-image: url("../images/switches/cherryMXSilentBlack.png");
+}
+#cherryMXlineargrey .switch-listing .media-img {
+  background-image: url("../images/switches/cherryMXlineargrey.png");
+}
+#topre30g .switch-listing .media-img {
+  background-image: url("../images/switches/topre.png");
+}
+#cherryMXbrown .switch-listing .media-img {
+  background-image: url("../images/switches/cherryMXbrown.png");
+}
+#zealiopurple62g .switch-listing .media-img {
+  background-image: url("../images/switches/zealiopurple62g.png");
+}
+#outemuPurple .switch-listing .media-img {
+  background-image: url("../images/switches/outemuPurple.png");
+}
+#topre45g .switch-listing .media-img {
+  background-image: url("../images/switches/topre.png");
+}
+#zealiopurple65g .switch-listing .media-img {
+  background-image: url("../images/switches/zealiopurple65g.png");
+}
+#zealiopurple67g .switch-listing .media-img {
+  background-image: url("../images/switches/zealiopurple67g.png");
+}
+#matiasQuietClick .switch-listing .media-img {
+  background-image: url("../images/switches/matiasQuietClick.png");
+}
+#topre55g .switch-listing .media-img {
+  background-image: url("../images/switches/topre.png");
+}
+#cherryMXclear .switch-listing .media-img {
+  background-image: url("../images/switches/cherryMXclear.png");
+}
+#zealiopurple78g .switch-listing .media-img {
+  background-image: url("../images/switches/zealiopurple78g.png");
+}
+#cherryMXtactilegrey .switch-listing .media-img {
+  background-image: url("../images/switches/cherryMXtactilegrey.png");
+}
+#kailhPG1350blue .switch-listing .media-img {
+  background-image: url("../images/switches/kailhPG1350blue.png");
+}
+#kailhBoxWhite .switch-listing .media-img {
+  background-image: url("../images/switches/kailhBoxWhite.png");
+}
+#cherryMXblue .switch-listing .media-img {
+  background-image: url("../images/switches/cherryMXblue.png");
+}
+#matiasClick .switch-listing .media-img {
+  background-image: url("../images/switches/matiasClick.png");
+}
+#bucklingSpring .switch-listing .media-img {
+  background-image: url("../images/switches/bucklingSpring.png");
+}
+#cherryMXgreen .switch-listing .media-img {
+  background-image: url("../images/switches/cherryMXgreen.png");
+}
+/* #switchType .switch-listing .media-img {
+  background-image: url("../images/switches/switchType.png");
+} */
+
+.silencer .switch-listing .media-img {
+  background-image: url("../images/silencers/silencer.jpg");
+}
+.zealencio .media-img {
+  background-image: url("../images/silencers/zealencio.jpg");
+}
+.Oring40AL .media-img {
+  background-image: url("../images/silencers/Oring40AL.jpg");
+}
+.Oring40AR .media-img {
+  background-image: url("../images/silencers/Oring40AR.jpg");
+}
+
+
+.KBParadiseV60TypeR .media-img {
+  background-image: url("../images/keyboards/KBParadiseV60TypeR.png");
+}
+.KBParadiseV60TypeRPolestar .media-img {
+  background-image: url("../images/keyboards/KBParadiseV60TypeRPolestar.png");
+}
+.KBParadiseV60 .media-img {
+  background-image: url("../images/keyboards/KBParadiseV60.png");
+}
+.KBParadiseV60PlusBlueRed .media-img {
+  background-image: url("../images/keyboards/KBParadiseV60PlusBlueRed.png");
+}
+.KBParadiseV60PlusBlueGreen .media-img {
+  background-image: url("../images/keyboards/KBParadiseV60PlusBlueGreen.png");
+}
+.KBParadiseV60Vintage .media-img {
+  background-image: url("../images/keyboards/KBParadiseV60Vintage.png");
+}
+.KBParadiseV80 .media-img {
+  background-image: url("../images/keyboards/KBParadiseV80.png");
+}
+.KBParadiseV80Dolch .media-img {
+  background-image: url("../images/keyboards/KBParadiseV80Dolch.png");
+}
+.KBParadiseV80DolchRed .media-img {
+  background-image: url("../images/keyboards/KBParadiseV80DolchRed.png");
+}
+.KBParadiseV80Olivette .media-img {
+  background-image: url("../images/keyboards/KBParadiseV80Olivette.png");
+}
+.KBParadiseV80Vintage .media-img {
+  background-image: url("../images/keyboards/KBParadiseV80Vintage.png");
+}
+.CMMasterKeysS .media-img {
+  background-image: url("../images/keyboards/CMMasterKeysS.png");
+}
+.CMMasterKeysM .media-img {
+  background-image: url("../images/keyboards/CMMasterKeysM.png");
+}
+.LeopoldFC660M .media-img {
+  background-image: url("../images/keyboards/LeopoldFC660M.png");
+}
+.LeopoldFC660MBeige .media-img {
+  background-image: url("../images/keyboards/LeopoldFC660MBeige.png");
+}
+.LeopoldFC660MGreyBlue .media-img {
+  background-image: url("../images/keyboards/LeopoldFC660MGreyBlue.png");
+}
+.LeopoldFC660MNavy .media-img {
+  background-image: url("../images/keyboards/LeopoldFC660MNavy.png");
+}
+.LeopoldFC660MWhite .media-img {
+  background-image: url("../images/keyboards/LeopoldFC660MWhite.png");
+}
+.LeopoldFC660C .media-img {
+  background-image: url("../images/keyboards/LeopoldFC660C.png");
+}
+.LeopoldFC660CWhite .media-img {
+  background-image: url("../images/keyboards/LeopoldFC660CWhite.png");
+}
+.LeopoldFC750R .media-img {
+  background-image: url("../images/keyboards/LeopoldFC750R.png");
+}
+.LeopoldFC750RBeige .media-img {
+  background-image: url("../images/keyboards/LeopoldFC750RBeige.png");
+}
+.LeopoldFC750RGreyBlue .media-img {
+  background-image: url("../images/keyboards/LeopoldFC750RGreyBlue.png");
+}
+.LeopoldFC750RNavy .media-img {
+  background-image: url("../images/keyboards/LeopoldFC750RNavy.png");
+}
+.LeopoldFC750RWhite .media-img {
+  background-image: url("../images/keyboards/LeopoldFC750RWhite.png");
+}
+.LeopoldFC750RWhiteGreen .media-img {
+  background-image: url("../images/keyboards/LeopoldFC750RWhiteGreen.png");
+}
+.LeopoldFC900R .media-img {
+  background-image: url("../images/keyboards/LeopoldFC900R.png");
+}
+.LeopoldFC900RBeige .media-img {
+  background-image: url("../images/keyboards/LeopoldFC900RBeige.png");
+}
+.LeopoldFC900RNavy .media-img {
+  background-image: url("../images/keyboards/LeopoldFC900RNavy.png");
+}
+.LeopoldFC900RWhite .media-img {
+  background-image: url("../images/keyboards/LeopoldFC900RWhite.png");
+}
+.LeopoldFC900RWhiteGreen .media-img {
+  background-image: url("../images/keyboards/LeopoldFC900RWhiteGreen.png");
+}
+.CMMasterKeysSRGB .media-img {
+  background-image: url("../images/keyboards/CMMasterKeysSRGB.png");
+}
+.CMMasterKeysMK750 .media-img {
+  background-image: url("../images/keyboards/CMMasterKeysMK750.png");
+}
+.MKFissionRGB .media-img {
+  background-image: url("../images/keyboards/MKFissionRGB.png");
+}
+.MKFissionWhiteRGB .media-img {
+  background-image: url("../images/keyboards/MKFissionWhiteRGB.png");
+}
+.VortexPOK3R .media-img {
+  background-image: url("../images/keyboards/VortexPOK3R.png");
+}
+.VortexPOK3RRGB .media-img {
+  background-image: url("../images/keyboards/VortexPOK3RRGB.png");
+}
+.VortexPOK3RWhiteRGB .media-img {
+  background-image: url("../images/keyboards/VortexPOK3RWhiteRGB.png");
+}
+.VortexPOK3RWhite .media-img {
+  background-image: url("../images/keyboards/VortexPOK3RWhite.png");
+}
+.Magicforce68 .media-img {
+  background-image: url("../images/keyboards/Magicforce68.png");
+}
+.Magicforce68LED .media-img {
+  background-image: url("../images/keyboards/Magicforce68LED.png");
+}
+.Magicforce68LED2 .media-img {
+  background-image: url("../images/keyboards/Magicforce68LED2.png");
+}
+.Magicforce68LED3 .media-img {
+  background-image: url("../images/keyboards/Magicforce68LED3.png");
+}
+.Magicforce108LED .media-img {
+  background-image: url("../images/keyboards/Magicforce108LED.png");
+}
+.RK9000V2 .media-img {
+  background-image: url("../images/keyboards/RK9000V2.png");
+}
+.MKTypist .media-img {
+  background-image: url("../images/keyboards/MKTypist.png");
+}
+.FilcoMajestouchNinja .media-img {
+  background-image: url("../images/keyboards/FilcoMajestouchNinja.png");
+}
+.FilcoMajestouch2 .media-img {
+  background-image: url("../images/keyboards/FilcoMajestouch2.png");
+}
+.FilcoMajestouch2HAKUA .media-img {
+  background-image: url("../images/keyboards/FilcoMajestouch2HAKUA.png");
+}
+.DuckyOneTKL .media-img {
+  background-image: url("../images/keyboards/DuckyOneTKL.png");
+}
+.DuckyOneTKLBlueLED .media-img {
+  background-image: url("../images/keyboards/DuckyOneTKLBlueLED.png");
+}
+.DuckyOneRainbowTKL .media-img {
+  background-image: url("../images/keyboards/DuckyOneRainbowTKL.png");
+}
+.DuckyOne .media-img {
+  background-image: url("../images/keyboards/DuckyOne.png");
+}
+.DuckyOneBlueLED .media-img {
+  background-image: url("../images/keyboards/DuckyOneBlueLED.png");
+}
+.DuckyOneWhiteLED .media-img {
+  background-image: url("../images/keyboards/DuckyOneWhiteLED.png");
+}
+.DuckyOneGrey .media-img {
+  background-image: url("../images/keyboards/DuckyOneGrey.png");
+}
+.DuckyOneGreyBlue .media-img {
+  background-image: url("../images/keyboards/DuckyOneGreyBlue.png");
+}
+.DuckyOneRainbow .media-img {
+  background-image: url("../images/keyboards/DuckyOneRainbow.png");
+}
+.DuckyOneWhiteGreen .media-img {
+  background-image: url("../images/keyboards/DuckyOneWhiteGreen.png");
+}
+.DuckyOneWhitePink .media-img {
+  background-image: url("../images/keyboards/DuckyOneWhitePink.png");
+}
+.DuckyOneWhite .media-img {
+  background-image: url("../images/keyboards/DuckyOneWhite.png");
+}
+.DuckyOneSkyline .media-img {
+  background-image: url("../images/keyboards/DuckyOneSkyline.png");
+}
+.DuckyOneHorizon .media-img {
+  background-image: url("../images/keyboards/DuckyOneHorizon.png");
+}
+.DuckyOneHorizonTKL .media-img {
+  background-image: url("../images/keyboards/DuckyOneHorizonTKL.png");
+}
+.DuckyOneSkylineTKL .media-img {
+  background-image: url("../images/keyboards/DuckyOneSkylineTKL.png");
+}
+.DuckyOneRGBTKL .media-img {
+  background-image: url("../images/keyboards/DuckyOneRGBTKL.png");
+}
+.DuckyOneWhiteRGBTKL .media-img {
+  background-image: url("../images/keyboards/DuckyOneWhiteRGBTKL.png");
+}
+.DuckyOneRGB .media-img {
+  background-image: url("../images/keyboards/DuckyOneRGB.png");
+}
+.DuckyOneWhiteRGB .media-img {
+  background-image: url("../images/keyboards/DuckyOneWhiteRGB.png");
+}
+.VortexCore .media-img {
+  background-image: url("../images/keyboards/VortexCore.png");
+}
+.CherrySilentBlack .media-img {
+  background-image: url("../images/keyboards/CherrySilentBlack.png");
+}
+.GANSS87 .media-img {
+  background-image: url("../images/keyboards/GANSS87.png");
+}
+.VarmiloVA87MPanda .media-img {
+  background-image: url("../images/keyboards/VarmiloVA87MPanda.png");
+}
+.VarmiloVA108MPanda .media-img {
+  background-image: url("../images/keyboards/VarmiloVA108MPanda.png");
+}
+.VortexONE .media-img {
+  background-image: url("../images/keyboards/VortexONE.png");
+}
+.VortexONEWhite .media-img {
+  background-image: url("../images/keyboards/VortexONEWhite.jpg");
+}
+.Plum87 .media-img {
+  background-image: url("../images/keyboards/Plum87.png");
+}
+.Plum87White .media-img {
+  background-image: url("../images/keyboards/Plum87White.png");
+}
+.Plum108 .media-img {
+  background-image: url("../images/keyboards/Plum108.png");
+}
+.Plum108White .media-img {
+  background-image: url("../images/keyboards/Plum108White.png");
+}
+.Plum87WhiteRGB .media-img {
+  background-image: url("../images/keyboards/Plum87WhiteRGB.png");
+}
+.Plum108WhiteRGB .media-img {
+  background-image: url("../images/keyboards/Plum108WhiteRGB.png");
+}
+.Tada68 .media-img {
+  background-image: url("../images/keyboards/Tada68.png");
+}
+.Tada68AluminumBlack .media-img {
+  background-image: url("../images/keyboards/Tada68AluminumBlack.png");
+}
+.Tada68AluminumBlue .media-img {
+  background-image: url("../images/keyboards/Tada68AluminumBlue.png");
+}
+.Tada68AluminumGrey .media-img {
+  background-image: url("../images/keyboards/Tada68AluminumGrey.png");
+}
+.Tada68AluminumRed .media-img {
+  background-image: url("../images/keyboards/Tada68AluminumRed.png");
+}
+.Tada68AluminumSilver .media-img {
+  background-image: url("../images/keyboards/Tada68AluminumSilver.png");
+}
+.TopreTypeHeaven .media-img {
+  background-image: url("../images/keyboards/TopreTypeHeaven.png");
+}
+.TopreTypeHeavenPink .media-img {
+  background-image: url("../images/keyboards/TopreTypeHeavenPink.png");
+}
+.TopreRealforce104U .media-img {
+  background-image: url("../images/keyboards/TopreRealforce104U.png");
+}
+.Code87 .media-img {
+  background-image: url("../images/keyboards/Code87.png");
+}
+.Code104 .media-img {
+  background-image: url("../images/keyboards/Code104.png");
+}
+.MatiasFK302QuietPro .media-img {
+  background-image: url("../images/keyboards/MatiasFK302QuietPro.png");
+}
+.TopreRealforce87U .media-img {
+  background-image: url("../images/keyboards/TopreRealforce87U.png");
+}
+.TopreRealforce87UWhite .media-img {
+  background-image: url("../images/keyboards/TopreRealforce87UWhite.png");
+}
+.VortexPure .media-img {
+  background-image: url("../images/keyboards/VortexPure.png");
+}
+.HVKB390L .media-img {
+  background-image: url("../images/keyboards/HVKB390L.png");
+}
+.HVKB395L .media-img {
+  background-image: url("../images/keyboards/HVKB395L.png");
+}
+.Plugable87 .media-img {
+  background-image: url("../images/keyboards/Plugable87.png");
+}
+.Plugable104 .media-img {
+  background-image: url("../images/keyboards/Plugable104.png");
+}
+.FK302 .media-img {
+  background-image: url("../images/keyboards/FK302.png");
+}
+.UnicompModelM .media-img {
+  background-image: url("../images/keyboards/UnicompModelM.png");
+}
+.UnicompModelMWhite .media-img {
+  background-image: url("../images/keyboards/UnicompModelMWhite.png");
+}
+.ModelF62 .media-img {
+  background-image: url("../images/keyboards/ModelF62.png");
+}
+.ModelF62UltraCompact .media-img {
+  background-image: url("../images/keyboards/ModelF62UltraCompact.png");
+}
+.ModelF77 .media-img {
+  background-image: url("../images/keyboards/ModelF77.png");
+}
+.ModelF77UltraCompact .media-img {
+  background-image: url("../images/keyboards/ModelF77UltraCompact.png");
+}
+.RedragonK550 .media-img {
+  background-image: url("../images/keyboards/RedragonK550.png");
+}
+.RedragonK550White .media-img {
+  background-image: url("../images/keyboards/RedragonK550White.png");
+}
+.CorsairStrafe .media-img {
+  background-image: url("../images/keyboards/CorsairStrafe.png");
+}
+.CorsairK70 .media-img {
+  background-image: url("../images/keyboards/CorsairK70.png");
+}
+.CorsairK70RGB .media-img {
+  background-image: url("../images/keyboards/CorsairK70RGB.png");
+}
+.CorsairK95 .media-img {
+  background-image: url("../images/keyboards/CorsairK95.png");
+}
+.CorsairK95Gunmetal .media-img {
+  background-image: url("../images/keyboards/CorsairK95Gunmetal.png");
+}
+.ArealerRoarer .media-img {
+  background-image: url("../images/keyboards/ArealerRoarer.png");
+}
+.GSkillKM570RGB .media-img {
+  background-image: url("../images/keyboards/GSkillKM570RGB.png");
+}
+.keyboardType .media-img {
+  background-image: url("../images/keyboards/keyboardType.png");
+}
+
+.amazon .media-img {
+  background-image: url("http://media.corporate-ir.net/media_files/IROL/17/176060/img/logos/amazon_logo_RGB.jpg");
+}
+.mechanicalkeyboards .media-img {
+  background-image: url("https://mechanicalkeyboards.com/images/mk_logo.png");
+}
+.newegg .media-img {
+  background-image: url("https://c1.neweggimages.com/WebResource/Themes/2005/Nest/logo_424x210.png");
+}

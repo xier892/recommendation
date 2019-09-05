@@ -198,6 +198,12 @@
     margin: 0;
     height: 50px;
   }
+  .closeButton {
+    position: absolute;
+  }
+  .closeButton::after {
+    font-size: 2em;
+  }
   .submitButton {
     margin: 0;
     width: 100%;

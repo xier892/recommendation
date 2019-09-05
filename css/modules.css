@@ -48,7 +48,8 @@ article p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: absolute;
+    position: sticky;
+    top: 0;
     right: 0;
     height: 4.5em;
     padding: 0 1.5em 0.5em 1.5em;
@@ -88,6 +89,7 @@ article p {
 }
 .medium-article {
   width: 36em;
+  max-width: 90%;
 }
 .error-container {
   position: fixed;

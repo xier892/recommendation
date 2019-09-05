@@ -2,7 +2,7 @@ class Animation {
   constructor(el) {
     this.el = el;
     this.display = window.getComputedStyle(this.el, null).getPropertyValue('display');
-    this.animations = ['slideToLeft', 'slideToRight', 'slideFromLeft', 'slideFromRight', 'slideFromTop', 'slideToTop', 'slideUp', 'slideDown', 'fadeIn', 'fadeOut', 'shake', 'zoom', 'zoom2'];
+    this.animations = ['slideToLeft', 'slideToRight', 'slideFromLeft', 'slideFromRight', 'slideFromTop', 'slideToTop', 'slideToBottom', 'slideUp', 'slideDown', 'fadeIn', 'fadeOut', 'shake', 'zoom', 'zoom2'];
   }
   add(animation) {
     const anim = () => this.el.classList.add(animation);
@@ -88,7 +88,13 @@ class Animation {
     this.add('slideToTop');
     setTimeout(() => {
       this.el.style.display = 'none';
-    }, 600);
+    }, 300);
+  }
+  slideToBottom() {
+    this.add('slideToBottom');
+    setTimeout(() => {
+      this.el.style.display = 'none';
+    }, 300);
   }
   zoom() {
     this.el.style.transform = 'scale(0)';

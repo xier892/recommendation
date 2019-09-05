@@ -7,11 +7,11 @@ class EditMenu extends Modal {
     }
     document.getElementById('main').innerHTML +=
     `<div class="modal background-white" id="resubmit">
-      <div class="closeButton" id="closeButton"></div>
       <section class="container-wrapper">
         <section class="container-content" id="edit-questions">
         </section>
       </section>
+      <div class="closeButton" id="closeButton"></div>
     </div>`;
     for (let i = 0; i < questions.length; i++) {
       document.getElementById('edit-questions').innerHTML +=
@@ -48,12 +48,19 @@ class EditMenu extends Modal {
       this.constructor.editCriteria();
     });
     document.getElementById('closeButton').addEventListener('click', () => {
-      this.constructor.editCriteria();
+      this.constructor.editDiscard();
     });
     window.addEventListener('keyup', (event) => {
-      if (event.which === 27 && window.getComputedStyle(document.getElementById('resubmit'), null).getPropertyValue('display') !== 'none') {
+      if (event.which === 13 && window.getComputedStyle(document.getElementById('resubmit'), null).getPropertyValue('display') !== 'none') {
         window.requestAnimationFrame(() => {
           this.constructor.editCriteria();
+        });
+      }
+    });
+    window.addEventListener('keyup', (event) => {
+      if (event.which === 27) {
+        window.requestAnimationFrame(() => {
+          this.constructor.editDiscard();
         });
       }
     });
@@ -155,6 +162,8 @@ class EditMenu extends Modal {
       });
       document.getElementsByClassName('faulty')[0].scrollIntoView();
     } else {
+      new Checker().check();
+      new Checker().updateLocalStorage();
       document.getElementById('module').style.visibility = 'hidden';
       new Survey().next();
       document.getElementById('resubmit').style.top = '';
@@ -164,8 +173,20 @@ class EditMenu extends Modal {
           new Animation(document.getElementById('module')).slideFromRight();
           document.getElementById('module').style.visibility = '';
           document.documentElement.style.overflowY = '';
-        }, 600);
+        }, 300);
       });
     }
+  }
+  static editDiscard() {
+    loadFromStorage();
+    document.getElementById('module').style.visibility = 'hidden';
+    new Survey().next();
+    document.getElementById('resubmit').style.top = '';
+    new Animation(document.getElementById('resubmit')).slideToBottom();
+    setTimeout(() => {
+      new Animation(document.getElementById('module')).slideFromRight();
+      document.getElementById('module').style.visibility = '';
+      document.documentElement.style.overflowY = '';
+    }, 300);
   }
 }

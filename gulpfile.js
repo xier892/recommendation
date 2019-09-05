@@ -12,8 +12,8 @@ gulp.task('js', function() {
     'js/data/*.js',
     'js/src/*.js',
     'js/templates/*super.js',
-    'js/templates/*.js',
     'js/event/*.js',
+    'js/templates/*.js',
     'js/event/main.js'])
     .pipe(concat('index.min.js'))
     .pipe(uglify())

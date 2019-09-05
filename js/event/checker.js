@@ -31,6 +31,9 @@ class Checker {
         break;
     }
   }
+  updateLocalStorage() {
+    return this.constructor.checkSettings();
+  }
   static toggleClicky() {
     if (document.getElementsByClassName('forceUltraLight selected').length > 0 || document.getElementsByClassName('noiseQuiet selected').length > 0) {
       new Choice(document.getElementById('tactilityClicky')).disable();
@@ -42,23 +45,18 @@ class Checker {
     switch (true) {
       case document.getElementsByClassName('forceUltraLight selected').length > 0:
         settings.force = 'ultralight';
-        localStorage.setItem('force', 'ultralight');
         break;
       case document.getElementsByClassName('forceLight selected').length > 0:
         settings.force = 'light';
-        localStorage.setItem('force', 'light');
         break;
       case document.getElementsByClassName('forceMed selected').length > 0:
         settings.force = 'med';
-        localStorage.setItem('force', 'med');
         break;
       case document.getElementsByClassName('forceHeavy selected').length > 0:
         settings.force = 'heavy';
-        localStorage.setItem('force', 'heavy');
         break;
       case document.getElementsByClassName('forceUltra selected').length > 0:
         settings.force = 'ultra';
-        localStorage.setItem('force', 'ultra');
         break;
       default:
         break;
@@ -68,11 +66,9 @@ class Checker {
     switch (true) {
       case document.getElementsByClassName('noiseQuiet selected').length > 0:
         settings.noise = 'quiet';
-        localStorage.setItem('noise', 'quiet');
         break;
       case document.getElementsByClassName('noiseLoud selected').length > 0:
         settings.noise = 'loud';
-        localStorage.setItem('noise', 'loud');
         break;
       default:
         break;
@@ -82,15 +78,12 @@ class Checker {
     switch (true) {
       case document.getElementsByClassName('tactilityLinear selected').length > 0:
         settings.tactility = 'linear';
-        localStorage.setItem('tactility', 'linear');
         break;
       case document.getElementsByClassName('tactilityBumpy selected').length > 0:
         settings.tactility = 'tactile';
-        localStorage.setItem('tactility', 'tactile');
         break;
       case document.getElementsByClassName('tactilityClicky selected').length > 0:
         settings.tactility = 'clicky';
-        localStorage.setItem('tactility', 'clicky');
         break;
       default:
         break;
@@ -100,15 +93,12 @@ class Checker {
     switch (true) {
       case document.getElementsByClassName('size100 selected').length > 0:
         settings.size = 100;
-        localStorage.setItem('size', 100);
         break;
       case document.getElementsByClassName('size80 selected').length > 0:
         settings.size = 80;
-        localStorage.setItem('size', 80);
         break;
       case document.getElementsByClassName('size60 selected').length > 0:
         settings.size = 60;
-        localStorage.setItem('size', 60);
         break;
       default:
         break;
@@ -118,11 +108,9 @@ class Checker {
     switch (true) {
       case document.getElementsByClassName('macrosYes selected').length > 0:
         settings.macros = 'yes';
-        localStorage.setItem('macros', 'yes');
         break;
       case document.getElementsByClassName('macrosNo selected').length > 0:
         settings.macros = 'no';
-        localStorage.setItem('macros', 'no');
         break;
       default:
         break;
@@ -132,11 +120,9 @@ class Checker {
     switch (true) {
       case document.getElementsByClassName('backlightingYes selected').length > 0:
         settings.backlighting = 'yes';
-        localStorage.setItem('backlighting', 'yes');
         break;
       case document.getElementsByClassName('backlightingNo selected').length > 0:
         settings.backlighting = 'no';
-        localStorage.setItem('backlighting', 'no');
         break;
       default:
         break;
@@ -146,14 +132,21 @@ class Checker {
     switch (true) {
       case document.getElementsByClassName('colorYes selected').length > 0:
         settings.color = 'yes';
-        localStorage.setItem('color', 'yes');
         break;
       case document.getElementsByClassName('colorNo selected').length > 0:
         settings.color = 'no';
-        localStorage.setItem('color', 'no');
         break;
       default:
         break;
     }
+  }
+  static checkSettings() {
+    localStorage.setItem('force', settings.force);
+    localStorage.setItem('noise', settings.noise);
+    localStorage.setItem('tactility', settings.tactility);
+    localStorage.setItem('size', settings.size);
+    localStorage.setItem('macros', settings.macros);
+    localStorage.setItem('backlighting', settings.backlighting);
+    localStorage.setItem('color', settings.color);
   }
 }

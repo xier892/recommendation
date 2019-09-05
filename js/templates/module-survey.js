@@ -5,6 +5,7 @@ class Survey extends Module {
   }
   next() {
     if (settings.start >= questions.length) {
+      new Checker().updateLocalStorage();
       new Animation(super.container).slideToLeft();
       const waitforcompletion = () => {
         if (settings.completed !== 'yes') {

@@ -11,7 +11,7 @@ class EditMenu extends Modal {
         <section class="container-content" id="edit-questions">
         </section>
       </section>
-      <div class="closeButton" id="closeButton"></div>
+      <div class="closeButton closeButtonTop" id="closeButtonTop"></div>
     </div>`;
     for (let i = 0; i < questions.length; i++) {
       document.getElementById('edit-questions').innerHTML +=
@@ -28,6 +28,7 @@ class EditMenu extends Modal {
     document.getElementById('edit-questions').innerHTML +=
     `<section class="button-container-submit">
       <button class="submitButton background-gray3" id="submitButton">Submit</button>
+      <button class="closeButton closeButtonBottom background-gray2" id="closeButtonBottom">Cancel</button>
     </section>`;
     return this.selectAll();
   }
@@ -47,9 +48,11 @@ class EditMenu extends Modal {
     document.getElementById('submitButton').addEventListener('click', () => {
       this.constructor.editCriteria();
     });
-    document.getElementById('closeButton').addEventListener('click', () => {
-      this.constructor.editDiscard();
-    });
+    for (var i = 0; i < document.getElementsByClassName('closeButton').length; i++) {
+      document.getElementsByClassName('closeButton')[i].addEventListener('click', () => {
+        this.constructor.editDiscard();
+      });
+    };
     window.addEventListener('keyup', (event) => {
       if (event.which === 13 && window.getComputedStyle(document.getElementById('resubmit'), null).getPropertyValue('display') !== 'none') {
         window.requestAnimationFrame(() => {
@@ -180,13 +183,15 @@ class EditMenu extends Modal {
   static editDiscard() {
     loadFromStorage();
     document.getElementById('module').style.visibility = 'hidden';
-    new Survey().next();
     document.getElementById('resubmit').style.top = '';
     new Animation(document.getElementById('resubmit')).slideToBottom();
     setTimeout(() => {
-      new Animation(document.getElementById('module')).slideFromRight();
+      new Animation(document.getElementById('module')).fadeIn();
       document.getElementById('module').style.visibility = '';
       document.documentElement.style.overflowY = '';
     }, 300);
+    document.getElementById('editButton').addEventListener('click', () => {
+      new EditMenu().open();
+    });
   }
 }

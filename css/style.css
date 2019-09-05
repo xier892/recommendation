@@ -25,7 +25,7 @@
   button.background-white:hover {
     background-color: rgb(245, 245, 245) !important;
   }
-  .background-white .closeButton:hover {
+  .background-white .closeButtonTop:hover {
     background-color: rgb(235, 235, 235);
   }
 .background-white-95 {
@@ -56,10 +56,10 @@
   button.background-gray3:hover {
     background-color: #3c3c3c !important;
   }
-  .background-gray3 .closeButton:hover {
+  .background-gray3 .closeButtonTop:hover {
     background-color: rgb(60, 60, 60);
   }
-  .background-gray3 .closeButton::after {
+  .background-gray3 .closeButtonTop::after {
     color: #fff;
   }
   .background-gray3 .text-blue1 {

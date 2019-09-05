@@ -30,6 +30,9 @@ class Survey extends Module {
     new Animation(super.container).slideToRight();
     setTimeout(() => this.appendQuestion('prev'), 150);
   }
+  cancel() {
+    new Animation(super.container).slideToLeft();
+  }
   appendQuestion(direction) {
     super.html.innerHTML =
     `<section class="container-content">

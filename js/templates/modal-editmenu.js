@@ -59,9 +59,7 @@ class EditMenu extends Modal {
           this.constructor.editCriteria();
         });
       }
-    });
-    window.addEventListener('keyup', (event) => {
-      if (event.which === 27) {
+      if (event.which === 27 && window.getComputedStyle(document.getElementById('resubmit'), null).getPropertyValue('display') !== 'none') {
         window.requestAnimationFrame(() => {
           this.constructor.editDiscard();
         });
@@ -185,13 +183,15 @@ class EditMenu extends Modal {
     document.getElementById('module').style.visibility = 'hidden';
     document.getElementById('resubmit').style.top = '';
     new Animation(document.getElementById('resubmit')).slideToBottom();
-    setTimeout(() => {
-      new Animation(document.getElementById('module')).fadeIn();
-      document.getElementById('module').style.visibility = '';
-      document.documentElement.style.overflowY = '';
-    }, 300);
-    document.getElementById('editButton').addEventListener('click', () => {
-      new EditMenu().open();
+    window.requestAnimationFrame(() => {
+      setTimeout(() => {
+        new Animation(document.getElementById('module')).fadeIn();
+        document.getElementById('module').style.visibility = '';
+        document.documentElement.style.overflowY = '';
+      }, 300);
+      document.getElementById('editButton').addEventListener('click', () => {
+        new EditMenu().open();
+      });
     });
   }
 }

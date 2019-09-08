@@ -34,30 +34,34 @@ class EditMenu extends Modal {
   }
   reveal() {
     const modal = document.getElementById('resubmit');
+    const previousHTML = document.getElementById('module').innerHTML;
     new Animation(document.getElementById('module')).fadeOut();
+    setTimeout(() => {
+      document.getElementById('module').innerHTML = '<div class="medium-container background-white drop-shadow"><section class="container-wrapper" id="module-content"></section></div>'
+    }, 350);
     new Animation(modal).slideFromTop();
     modal.style.display = 'flex';
     modal.style.top = `${Math.max(0, ((document.documentElement.clientHeight - modal.offsetHeight) / 2) + window.scrollY)}px`;
     modal.style.left = `${Math.max(0, ((document.documentElement.clientWidth - modal.offsetWidth) / 2) + window.scrollX)}px`;
     modal.scrollTop = 0;
     document.documentElement.style.overflowY = 'hidden';
-    return this.enableEvents();
+    return this.enableEvents(previousHTML);
   }
-  enableEvents() {
+  enableEvents(p) {
     new Survey().constructor.enableChoices();
     document.getElementById('submitButton').addEventListener('click', () => {
       this.constructor.editCriteria();
     });
     for (var i = 0; i < document.getElementsByClassName('closeButton').length; i++) {
       document.getElementsByClassName('closeButton')[i].addEventListener('click', () => {
-        this.constructor.editDiscard();
+        this.constructor.editDiscard(p);
       });
     };
     window.addEventListener('keyup', (event) => {
       if (event.which === 13 && document.getElementById('resubmit') !== null) {
         this.constructor.editCriteria();
       } else if (event.which === 27 && document.getElementById('resubmit') !== null) {
-        this.constructor.editDiscard();
+        this.constructor.editDiscard(p);
       }
     });
   }
@@ -161,11 +165,10 @@ class EditMenu extends Modal {
       new Checker().check();
       new Checker().updateLocalStorage();
       document.getElementById('module').style.visibility = 'hidden';
-      new Survey().next();
       document.getElementById('resubmit').style.top = '';
       new Animation(document.getElementById('resubmit')).slideToTop();
       setTimeout(() => {
-        new Animation(document.getElementById('module')).slideFromRight();
+        new Recommendation().generate();
         document.getElementById('module').style.visibility = '';
         document.documentElement.style.overflowY = '';
         if (document.getElementById('resubmit') !== null) {
@@ -174,11 +177,12 @@ class EditMenu extends Modal {
       }, 300);
     }
   }
-  static editDiscard() {
+  static editDiscard(savedContent) {
     loadFromStorage();
     document.getElementById('module').style.visibility = 'hidden';
     document.getElementById('resubmit').style.top = '';
     new Animation(document.getElementById('resubmit')).slideToBottom();
+    document.getElementById('module').innerHTML = savedContent;
     setTimeout(() => {
       new Animation(document.getElementById('module')).fadeIn();
       document.getElementById('module').style.visibility = '';

@@ -30,7 +30,7 @@ class EditMenu extends Modal {
       <button class="submitButton background-gray3" id="submitButton">Submit</button>
       <button class="closeButton closeButtonBottom background-gray2" id="closeButtonBottom">Cancel</button>
     </section>`;
-    return this.selectAll();
+    this.selectAll();
   }
   reveal() {
     const modal = document.getElementById('resubmit');
@@ -54,15 +54,10 @@ class EditMenu extends Modal {
       });
     };
     window.addEventListener('keyup', (event) => {
-      if (event.which === 13 && window.getComputedStyle(document.getElementById('resubmit'), null).getPropertyValue('display') !== 'none') {
-        window.requestAnimationFrame(() => {
-          this.constructor.editCriteria();
-        });
-      }
-      if (event.which === 27 && window.getComputedStyle(document.getElementById('resubmit'), null).getPropertyValue('display') !== 'none') {
-        window.requestAnimationFrame(() => {
-          this.constructor.editDiscard();
-        });
+      if (event.which === 13 && document.getElementById('resubmit') !== null) {
+        this.constructor.editCriteria();
+      } else if (event.which === 27 && document.getElementById('resubmit') !== null) {
+        this.constructor.editDiscard();
       }
     });
   }
@@ -169,13 +164,14 @@ class EditMenu extends Modal {
       new Survey().next();
       document.getElementById('resubmit').style.top = '';
       new Animation(document.getElementById('resubmit')).slideToTop();
-      window.requestAnimationFrame(() => {
-        setTimeout(() => {
-          new Animation(document.getElementById('module')).slideFromRight();
-          document.getElementById('module').style.visibility = '';
-          document.documentElement.style.overflowY = '';
-        }, 300);
-      });
+      setTimeout(() => {
+        new Animation(document.getElementById('module')).slideFromRight();
+        document.getElementById('module').style.visibility = '';
+        document.documentElement.style.overflowY = '';
+        if (document.getElementById('resubmit') !== null) {
+          document.getElementById('resubmit').parentNode.removeChild(document.getElementById('resubmit'));
+        }
+      }, 300);
     }
   }
   static editDiscard() {
@@ -183,15 +179,16 @@ class EditMenu extends Modal {
     document.getElementById('module').style.visibility = 'hidden';
     document.getElementById('resubmit').style.top = '';
     new Animation(document.getElementById('resubmit')).slideToBottom();
-    window.requestAnimationFrame(() => {
-      setTimeout(() => {
-        new Animation(document.getElementById('module')).fadeIn();
-        document.getElementById('module').style.visibility = '';
-        document.documentElement.style.overflowY = '';
-      }, 300);
-      document.getElementById('editButton').addEventListener('click', () => {
-        new EditMenu().open();
-      });
+    setTimeout(() => {
+      new Animation(document.getElementById('module')).fadeIn();
+      document.getElementById('module').style.visibility = '';
+      document.documentElement.style.overflowY = '';
+      if (document.getElementById('resubmit') !== null) {
+        document.getElementById('resubmit').parentNode.removeChild(document.getElementById('resubmit'));
+      }
+    }, 300);
+    document.getElementById('editButton').addEventListener('click', () => {
+      new EditMenu().open();
     });
   }
 }

@@ -19,9 +19,7 @@ class Modal {
     } else {
       modal.style.top = `${0 - (this.windowHeight - this.moduleHeight) / 2}px`;
     }
-    window.requestAnimationFrame(() => {
-      modal.style.left = `${0 - (this.windowWidth - this.moduleWidth) / 2}px`;
-    });
+    modal.style.left = `${0 - (this.windowWidth - this.moduleWidth) / 2}px`;
     modal.addEventListener('click', () => {
       this.close(el);
     });

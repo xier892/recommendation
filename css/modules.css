@@ -43,6 +43,7 @@ article p {
   overflow: auto;
   left: 0;
   top: 0;
+  will-change: transform, opacity;
 }
   .closeButtonTop {
     display: flex;
@@ -83,6 +84,7 @@ article p {
 .module {
   opacity: 0;
   position: relative;
+  will-change: transform, opacity;
 }
 .small-article {
   width: 26em;

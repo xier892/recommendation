@@ -199,14 +199,10 @@ class Keyboard extends Module {
       toggler.addEventListener('click', () => {
         if (toggler.childNodes[0].innerHTML === 'Show') {
           new Animation(toggler.previousElementSibling).slideDown();
-          window.requestAnimationFrame(() => {
-            toggler.childNodes[0].innerHTML = 'Hide';
-          });
+          toggler.childNodes[0].innerHTML = 'Hide';
         } else if (toggler.childNodes[0].innerHTML === 'Hide') {
           new Animation(toggler.previousElementSibling).slideUp();
-          window.requestAnimationFrame(() => {
-            toggler.childNodes[0].innerHTML = 'Show';
-          });
+          toggler.childNodes[0].innerHTML = 'Show';
         }
       });
     });
